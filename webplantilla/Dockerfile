@@ -1,6 +1,2 @@
 FROM httpd:2.4
-WORKDIR /web/webplantilla
-COPY . .
-CMD [ "npm start","npm install"]
-
-
+COPY . /usr/local/apache2/htdocs/
